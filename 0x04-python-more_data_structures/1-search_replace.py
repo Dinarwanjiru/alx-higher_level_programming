@@ -1,4 +1,4 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 '''function that replaces all occurrences of an element by another in a new list.'''
 
 
