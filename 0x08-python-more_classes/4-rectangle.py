@@ -1,15 +1,14 @@
-
-"""Defines a class of the rectangle."""
+ a Rectangle class."""
 
 
 class Rectangle:
-    """Represent a rectangle class."""
+    """Represent the  rectangle class."""
 
     def __init__(self, width=0, height=0):
-        """Initialize  new Rectangle.
+        """Initializes a new Rectangle.
         Args:
-            width (int): The  rectangle width.
-            height (int): The  rectangle height .
+            width (int): The rectangle width.
+            height (int): The rectangle height.
         """
         self.width = width
         self.height = height
@@ -29,7 +28,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get Rectangle height."""
+        """Get the Rectangle height."""
         return self.__height
 
     @height.setter
@@ -51,8 +50,8 @@ class Rectangle:
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """Return the Rectangle printable representatio
-        Represents the rectangle with #.
+        """Return the Rectangle printavle rep..
+        Represents the rectangle with  #.
         """
         if self.__width == 0 or self.__height == 0:
             return ("")
@@ -63,3 +62,7 @@ class Rectangle:
             if k != self.__height - 1:
                 r.append("\n")
         return ("".join(r))
+
+    def __repr__(self):
+        """Return  the Rectangle string rep."""
+        return f"Rectangle({self.__width}, {self.__height})"
