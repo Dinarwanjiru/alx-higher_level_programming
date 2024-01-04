@@ -1,5 +1,5 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """empty class that defines a rectangle"""
 class rectangle:
-	"""empy class"""
+	"""empty class"""
 	pass
